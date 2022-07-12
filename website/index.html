@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Jornal App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Weather Jornal App</h1>
+  <div class="container">
+    <label for="country">Enter country name
+      <input type="text" name="country" id="country" placeholder="eg. United States">
+    </label>
+    <div id="autoComplete"></div>
+    <label for="zip">Enter Zipcode
+      <input type="text" name="zip" id="zip" placeholder="enter zip code here">
+    </label>
+    <label for="feelings">How are you feeling today?
+      <textarea type="text" name="feelings" id="feelings"></textarea>
+    </label>
+    <button id="generate">Generate</button>
+    <p id="error-msg">Invalid input, try again</p>
+    <div id="entryHolder">
+      <div id="left-side">
+        <img src="" alt="icon" id="icon">
+        <div id="description"></div>
+        <div id="content"></div>
+      </div>
+      <div id="right-side">
+        <div id="temp"></div>
+        <div id="date"></div>
+        <div id="city"></div>
+      </div>
+    </div>
+  </div>
+  <script src="./countryNames.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>

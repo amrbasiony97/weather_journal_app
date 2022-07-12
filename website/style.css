@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&family=Yeseva+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background: url('./img/XP.jpg');
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center, center;
+}
+
+h1 {
+    font-family: 'Yeseva One', cursive;
+    text-align: center;
+    font-size: 3.5rem;
+    padding: 3rem 0 1rem 0;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 1);
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.5);
+    width: 80%;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+input, textarea {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    height: 1.5rem;
+    font-size: 1rem;
+    border: none;
+    color: #222;
+    outline: 0px;
+}
+
+#generate {
+    display: block;
+    background-color: green;
+    padding: 0.5rem 1rem;
+    margin: 2rem auto;
+    font-size: 1.2rem;
+    width: 200px;
+    border: none;
+    outline: 0px;
+}
+
+#generate:hover, #generate:focus {
+    background-color: rgb(0, 180, 0);
+}
+
+#autoComplete {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    width: 80%;
+    max-width: 400px;
+    opacity: 1;
+    border-top: 1px solid #eee;
+}
+
+li {
+    color: #222;
+    list-style: none;
+    padding: 0.5rem;
+    margin: 0.25rem;
+}
+
+li:hover {
+    cursor: default;
+    background-color: #eee;
+}
+
+#error-msg {
+    position: relative;
+    color: white;
+    background-color: red;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    right: 0;
+    left: 0;
+    width: 200px;
+    font-weight: bold;
+    padding: 4px 10px;
+    display: none;
+}
+
+#entryHolder {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#temp {
+    font-size: 5rem;
+}
+#date, .degrees, #content {
+    font-size: 2rem;
+}
+
+.degrees {
+    position: relative;
+    right: 20px;
+}
+
+#description, #city {
+    font-size: 1.2rem;
+}
+
+#icon {
+    display: none;
+    width: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+        padding-bottom: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #entryHolder {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
